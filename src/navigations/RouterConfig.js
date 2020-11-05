@@ -9,6 +9,7 @@ import Project from "../pages/projects/project";
 import Home from "../pages/home/home";
 import ProductsList from "../pages/products/ProductList";
 import Cart from "../pages/cart/Cart";
+import AuthRoute from "./AuthRoute";
 
 function AppRouter() {
   const [user, setUser] = useState(null);
@@ -24,6 +25,7 @@ function AppRouter() {
         <Route component={withRouter(Contact)} path="/contact" exact />
         <Route component={Project} path="/project" exact />
         <Route component={Cart} path="/cart" exact />
+        {/* <AuthRoute component={Cart} path="/cart" exact /> */}
         {/* <PrivateRoute component={AboutMe} path="/home" exact />
           <PrivateRoute component={Contact} path="/contact-me" exact />
           <PrivateRoute component={Project} path="/portfolio" exact /> */}
